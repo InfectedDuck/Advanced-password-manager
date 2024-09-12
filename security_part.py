@@ -65,16 +65,16 @@ def send_code_via_sms_or_email(method="sms"):
     if method == "email":
         server = smtplib.SMTP('smtp.gmail.com', 587)
         server.starttls()
-        server.login("toktarkametaj@gmail.com", "Kametaytoktar2023!!")
+        server.login(, ")
         message = f"Your verification code is {code}"
-        server.sendmail("toktarkametaj@gmail.com", "kametaytoktar@gmail.com", message)
+        server.sendmail(, , message)
         server.quit()
     elif method == "sms":
-        client = Client("AC195947051d789d8ffed97802281ec632", "4fee6f2e0b3363ff08c2dd1db4612d8a")
+        client = Client()
         message = client.messages.create(
             body=f"Your verification code is {code}",
-            from_='+19127711098',
-            to='+77072953027'
+            from_='',
+            to=''
         )
     return code
 
