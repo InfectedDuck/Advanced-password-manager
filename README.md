@@ -58,3 +58,7 @@ This project is a **Password Manager Application** built using **KivyMD**. It al
 - Implementing recovery mechanisms for lost encryption keys.
 - Adding more biometric authentication methods like fingerprint scanning.
 - Storing encrypted data in a more secure, cloud-based solution.
+
+## License
+
+This project is licensed under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0). See the [LICENSE](LICENSE.txt) file for details.
